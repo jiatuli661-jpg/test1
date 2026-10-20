@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int n,k;
+    scanf("%d %d",&n,&k);
+    int m=n;
+    int sum=n;
+    while(m>=k){
+        int d=m/k;
+        sum+=d;
+        m=m%k+d;
+    }
+    printf("%d",sum);
+    return 0;
+}
