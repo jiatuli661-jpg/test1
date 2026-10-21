@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    double s,x;
+    scanf("%lf %lf",&s,&x);
+    double pos=0;
+    double speed=7;
+    while(pos<s-x){
+        pos+=speed;
+        speed*=0.98;
+    }
+    if(pos>s+x){
+        printf("n");
+    }else{
+        pos+=speed;
+        if(pos>s+x){
+            printf("n");
+        }else{
+            printf("y");
+        }
+    }
+    return 0;
+}
