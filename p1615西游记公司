@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d:%d:%d",&a,&b,&c);
+    int x,y,z;
+    scanf("%d:%d:%d",&x,&y,&z);
+    int s;
+    scanf("%d",&s);
+    long long time1=a*3600+b*60+c;
+    long long time2=x*3600+y*60+z;
+    long long time=time2-time1;
+    long long n=time*s;
+    printf("%lld",n);
+    return 0;
+}
